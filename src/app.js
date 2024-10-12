@@ -1,11 +1,18 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+// eslint-disable-next-line no-console
+//console.log("hola");
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
+let mail = ['.com','.es','.TheLostofUs'];
+
+for(let i = 0; i <pronoun.length; i++){
+    for(let y = 0; y < adj.length; y++){
+      for( let k = 0; k < noun.length; k++){
+         for (let x = 0; x< mail.length; x++){
+          console.log(pronoun[i]+ adj[y]+ noun[k]+ mail[x]);
+         }
+      }
+    }
+}
